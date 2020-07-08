@@ -87,6 +87,35 @@ header{
     background-color: orangered;
     border: 5px solid white;
 }
+.my-works h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(./img/тексура\ оранджеві\ крапки.jpg);
+    border: 3px solid white;
+    color: white;
+    background-size: cover;
+    overflow: hidden;
+}
+.block-works{
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/mak-9KlX_t9-Tmc-unsplash.jpg);
+    color: white;
+    background-size: cover;
+    overflow: hidden;
+}
+.block-works a{
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    align-content: center;
+    margin: 5%;
+    border: 3px solid white;
+}
 .skills h2{
     display: flex;
     justify-content: center;
@@ -100,53 +129,49 @@ header{
     background-size: cover;
     overflow: hidden;
 }
-.skills-img{
-    background-image: url(./img/alexandru-acea-GhwCef9VRr4-unsplash.jpg);
-    width: 680px;
-    height: 700px;
-    background-size: cover;
-    overflow: hidden;
-    border: 3px solid white;
-    border-top: none;
-}
-.skills-block{
-    display: flex;
-    justify-content: center;
-    
-}
 .skills-info{
-    width: 680px;
-    height: 700px;
-    background-image: url(./img/хвиля.jpg);
+    background-image: url(./img/emile-perron-xrVDYZRGdw4-unsplash.jpg);
     background-size: cover;
     overflow: hidden;
     border: 3px solid white;
-    color: white;
+    color: black;
     border-top: none;
+    height: 700px;
 }
 .skills-info h3{
     font-size: 40px;
     margin-top: 160px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     font-family: 'Montserrat Subrayada', sans-serif;
 }
-.skills-info p{
-    width: 370px;
+.skills-info ul{
     font-size: 23px;
     font-family: 'Oswald', sans-serif;
-    text-align: center;
-    background-image: url(./img/хвиля.jpg);
     background-size: cover;
     overflow: hidden;
+    margin: 7%;
+    margin-left: 10%;
 }
-.skills-text{
-    display: flex;
-    justify-content: center;
+.skills-info ul li{
+    margin: 3%;
+    list-style: none;
     
 }
+.skills-info ul i{
+    font-size: 40px;
+    margin: 50px;
+}
+.fa-html5{
+    color: red;
+}
+.fa-css3-alt{
+    color: royalblue;
+}
+.fa-js-square{
+    color: orangered;
+}
 .footer{
-    border: 3px solid white;
     background-image: url(./img/вогнище.jpg);
     display: flex;
     justify-content: space-between;
@@ -191,9 +216,88 @@ header{
     margin-right: 10%;
 }
 .fa-mobile-alt{
+    position: absolute;
     color: white;
     font-size: 50px;
-    animation: linear 30s orbita2 infinite;
+    animation: linear 30s mobile infinite;
+    margin: 5%;
+    margin-left: 400px;
+}
+.benefits h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(./img/червоний\ листок.jpg);
+    border: 3px solid white;
+    color: white;
+    background-size: cover;
+    overflow: hidden;
+}
+.block-benefits{
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid white;
+}
+.time{
+    width: 50%;
+    background-image: url(./img/дерево.jpg);
+    background-size: cover;
+    overflow: hidden;
+    height: 500px;
+    border-right: 1.5px solid white;
+}
+.skill{
+    width: 50%;
+    background-image: url(./img/замерша\ земля.jpg);
+    background-size: cover;
+    overflow: hidden;
+    height: 500px;
+    border-left: 1.5px solid white;
+    
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 130px;
+    color: white;
+}
+.time h3{
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+.time p{
+    text-align: center;
+    width: 250px;
+    color: white;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+}
+.text-time{
+    display: flex;
+    justify-content: center;
+}
+.skill p{
+    text-align: center;
+    width: 250px;
+    color: white;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+}
+.skill h3{
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 30px;
+    color: white;
 }
 @keyframes orbita{
     0%{left: 0;}
@@ -208,54 +312,16 @@ header{
     90%{left: 50px;}
     100%{left: 0;}
 }
-@keyframes color1{
-    0%{margin-top: 70px;}
-    20%{margin-top: 430px;}
-    40%{margin-top: 340px;}
-    60%{margin-top: 250px;}
-    80%{margin-top: 160px;}
-    100%{margin-top: 70px;}
-}
-@keyframes color2{
-    0%{margin-top: 160px;}
-    20%{margin-top: 70px;}
-    40%{margin-top: 430px;}
-    60%{margin-top: 340px;}
-    80%{margin-top: 250px;}
-    100%{margin-top: 160px;}
-}
-@keyframes color3{
-    0%{margin-top: 250px;}
-    20%{margin-top: 160px;}
-    40%{margin-top: 70px;}
-    60%{margin-top: 430px;}
-    80%{margin-top: 340px;}
-    100%{margin-top: 250px;}
-}
-@keyframes color4{
-    0%{margin-top: 340px;}
-    20%{margin-top: 250px;}
-    40%{margin-top: 160px;}
-    60%{margin-top: 70px;}
-    80%{margin-top: 430px;}
-    100%{margin-top: 340px;}
-}
-@keyframes color5{
-    0%{margin-top: 430px;}
-    20%{margin-top: 340px;}
-    40%{margin-top: 250px;}
-    60%{margin-top: 160px;}
-    80%{margin-top: 70px;}
-    100%{margin-top: 430px;}
-}
-@keyframes orbita2{
+@keyframes mobile{
     0%{left: 0;}
-    10%{left: 100px;}
-    20%{left: 150px;}
-    30%{left: 100px;}
-    50%{left: 0; transform: rotate(360deg);}
-    70%{right: 100px;}
-    80%{right: 150px;}
-    90%{right: 100px;}
-    100%{right: 0;}
+    10%{left: 50px;}
+    20%{left: 150px; }
+    30%{left: 250px; }
+    40%{left: 350px; }
+    50%{left: 450px; transform: rotate(380deg);}
+    60%{left: 350px; }
+    70%{left: 250px; }
+    80%{left: 150px; }
+    90%{left: 50px;}
+    100%{left: 0;}
 }
